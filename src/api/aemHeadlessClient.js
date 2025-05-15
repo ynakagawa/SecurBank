@@ -12,10 +12,10 @@ import AEMHeadless from "@adobe/aem-headless-client-js";
 
 // environment variable for configuring the headless client
 const {
-  REACT_APP_HOST_URI = 'http://localhost:3000',
-  REACT_APP_GRAPHQL_ENDPOINT = '/graphql/execute.json',
-  REACT_APP_USE_PROXY = 'true',
-  REACT_APP_AUTH_METHOD = 'none',
+  REACT_APP_HOST_URI,
+  REACT_APP_GRAPHQL_ENDPOINT,
+  REACT_APP_USE_PROXY,
+  REACT_APP_AUTH_METHOD,
   REACT_APP_DEV_TOKEN,
   REACT_APP_BASIC_AUTH_USER,
   REACT_APP_BASIC_AUTH_PASS,
@@ -48,10 +48,10 @@ const aemHeadlessClient = new AEMHeadless({
 
 // Prefix URLs with AEM Host
 export function addAemHost(url) {
-  if (!url) return '';
   if (url.startsWith("/")) {
     return new URL(url, REACT_APP_HOST_URI).toString();
   }
+
   return url;
 }
 

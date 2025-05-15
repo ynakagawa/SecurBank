@@ -14,15 +14,19 @@ import "./App.scss";
 function App() {
   return (
     <HelmetProvider>
-      <Router>
-        <div className="app">
-          <Helmet>
-            <meta
-              name="urn:adobe:aue:system:aemconnection"
-              content={`aem:${getURI()}`}
-            />
-          </Helmet>
-          <Header />
+      <div className="app">
+        <Helmet>
+          <script
+            src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+            async
+          />
+          <meta
+            name="urn:adobe:aue:system:aemconnection"
+            content={`aem:${getURI()}`}
+          />
+        </Helmet>
+        <Header />
+        <Router>
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -33,9 +37,9 @@ function App() {
               <Route path="/*" element={<NotFound />} />
             </Routes>
           </main>
-          <Footer />
-        </div>
-      </Router>
+        </Router>
+        <Footer />
+      </div>
     </HelmetProvider>
   );
 }
