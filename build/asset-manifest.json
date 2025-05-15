@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a28b77b.css",
+    "main.js": "/static/js/main.b5f3967d.js",
+    "static/js/453.b3974415.chunk.js": "/static/js/453.b3974415.chunk.js",
+    "static/media/InterTight-VariableFont.ttf": "/static/media/InterTight-VariableFont.1a6637707f1f349e23bb.ttf",
+    "static/media/phones.png": "/static/media/phones.b07da470faaeccbd0516.png",
+    "static/media/twitter-icon.svg": "/static/media/twitter-icon.acb35e345793892308cc90c6b98bef8c.svg",
+    "index.html": "/index.html",
+    "static/media/copyright.svg": "/static/media/copyright.a259b08aa1c4a9bef166691804fb491b.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.d322829fd99633210325f1e3803779ea.svg",
+    "static/media/SecurBank-icon-light.svg": "/static/media/SecurBank-icon-light.d60ef7dd3991609b6ad6052c6a02e194.svg",
+    "static/media/facebook-icon.svg": "/static/media/facebook-icon.d2cb008739122d12f23b4eec1515d59c.svg",
+    "static/media/SecurBank-icon-dark.svg": "/static/media/SecurBank-icon-dark.81da6e3a3fecb94f69dd350eb93bd595.svg",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.790a0902bfebbe9cdc3c7c3b16f5898d.svg",
+    "main.9a28b77b.css.map": "/static/css/main.9a28b77b.css.map",
+    "main.b5f3967d.js.map": "/static/js/main.b5f3967d.js.map",
+    "453.b3974415.chunk.js.map": "/static/js/453.b3974415.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a28b77b.css",
+    "static/js/main.b5f3967d.js"
+  ]
+}
