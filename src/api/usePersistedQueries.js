@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 
 import aemHeadlessClient from "./aemHeadlessClient";
 
-const { REACT_APP_ENDPOINT } = process.env;
+const { REACT_APP_ENDPOINT = '/graphql/execute.json' } = process.env;
 
 /**
  * This file contains the React useEffect custom hooks that:
@@ -42,7 +42,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
     );
     data = response?.data;
   } catch (e) {
-    err = e.toJSON()?.message;
+    err = e.toJSON?.()?.message || e.message || 'An error occurred';
   }
 
   return { data, err };
@@ -61,6 +61,8 @@ export function usePageBySlug(slug, variation = "master", fetchTrigger) {
 
   useEffect(() => {
     async function fetchData() {
+      if (!slug) return;
+
       const queryVariables = {
         slug,
         variation,
@@ -96,6 +98,8 @@ export function useTeaserListByPath(path, variation = "master", fetchTrigger) {
 
   useEffect(() => {
     async function fetchData() {
+      if (!path) return;
+
       const queryVariables = {
         path,
         variation,

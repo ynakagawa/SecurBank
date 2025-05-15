@@ -14,17 +14,15 @@ import "./App.scss";
 function App() {
   return (
     <HelmetProvider>
-      <div className="app">
-        <Helmet>
-           <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
-
-          <meta
-            name="urn:adobe:aue:system:aemconnection"
-            content={`aem:${getURI()}`}
-          />
-        </Helmet>
-        <Header />
-        <Router>
+      <Router>
+        <div className="app">
+          <Helmet>
+            <meta
+              name="urn:adobe:aue:system:aemconnection"
+              content={`aem:${getURI()}`}
+            />
+          </Helmet>
+          <Header />
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -35,9 +33,9 @@ function App() {
               <Route path="/*" element={<NotFound />} />
             </Routes>
           </main>
-        </Router>
-        <Footer />
-      </div>
+          <Footer />
+        </div>
+      </Router>
     </HelmetProvider>
   );
 }
