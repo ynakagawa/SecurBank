@@ -4,6 +4,9 @@ const path = require('path');
 
 const app = express();
 
+// Parse JSON bodies
+app.use(express.json());
+
 // Enable CORS for all routes
 app.use((req, res, next) => {
   // Allow requests from any origin
@@ -25,11 +28,15 @@ app.use((req, res, next) => {
   next();
 });
 
+// Auth routes for service token management
+const authRoutes = require('./src/api/routes/auth');
+app.use('/api/auth', authRoutes);
+
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'build')));
 
-// Proxy API requests to your backend
-app.use('/api', createProxyMiddleware({
+// Proxy other API requests to your backend (if needed)
+app.use('/api/aem', createProxyMiddleware({
   target: 'http://localhost:3000',
   changeOrigin: true,
   onProxyRes: function(proxyRes, req, res) {

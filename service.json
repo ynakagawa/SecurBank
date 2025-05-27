@@ -1,0 +1,18 @@
+ {
+  "ok": true,
+  "integration": {
+    "imsEndpoint": "ims-na1.adobelogin.com",
+    "metascopes": "ent_aem_cloud_api",
+    "technicalAccount": {
+      "clientId": "cm-p18253-e46622-integration-0",
+      "clientSecret": "p8e-EaGPHVXFBIry25LlLDq2_QVjlt2sGgKO"
+    },
+    "email": "f457fbb5-a448-4cff-97c8-95859d55f07e@techacct.adobe.com",
+    "id": "F8E92295682DE04E0A495E83@techacct.adobe.com",
+    "org": "21BD487E5F2280130A495ECC@AdobeOrg",
+    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\r\nMIIEowIBAAKCAQEA0bnGAdIOqFUb9xCQrtLmBBA5Fy62fz0gqWY9rifXxNDhHvhY\r\nb1LiVriAzhkTtoDK4h6KVIHmotYKptlDP/qNrPb9XkudWVMs6NlfvBmPhZJCA8+y\r\nNZymBx6tqkt4NyAvHK5GKDK78eUgx7DxXmeb/dRTCst8bTqsCL2N27D9983fogqq\r\n4b93j0vAuoFIoabN3Itz90Rg3JioUB6JOvlCdf7TwcBlN5aJZKmr+JgMK0teiRlm\r\nTJvLayAbjN1/PF3Nw2M7PfvnJyve34eeZ5aTREmfBcj/xYwzNLrwU0/ctr9yrap9\r\n+KGB9IKMnmZ1Tgl5MPnAKugE0JTLdLGcabh2fwIDAQABAoIBAEa0CGrotARP3QOn\r\n0/78HotUJMsJ9oBizTYOv9CMohM6EAru0nGFUcTGorXYgmrOdJdSkHP47xYKbsDd\r\nEezpvQWIptY5S6yne8ZsMfgp7dar/hFm3b9xNg/Eaeu1UavT784Nep1mrTHZevmX\r\nT2fyKgaio/RJsYLpesHflYlw283EP9NjGZRVPmIR3kTzX1SUwhEwXJ/E6l600XYv\r\ni3zZfg7AibU9FLPz5D3+5kLy7GYAL7voYCHteN2l/mz30qlXGaks3lKDHUKl2jqy\r\nWoVvj14W9r4tP/lLvMaWvsZt0KZxEMlS/rFcyOl3K15sTJPEoBJ2yvEdEs0AoNF+\r\nXS5M4OECgYEA7D/kDPACR7OgsuaxFK/WNHOFYBW2YSvkKRyYkfK2sy/s5I9BKPUD\r\nW11fEjP9zhDbK+vGbqP+WhNbshmhr5vaSJJI/PLMoAMActvTxSrIFW19LpX9A/XF\r\n6a1Xn19N8HcO4VzgHUJWjGfQtCHGFkhc1uP4nO06iOR326Mjq/TCmVcCgYEA40I6\r\n3A5xE4BcYBWnafaKj4/hjtzJRoljgLgWpKnVSPwphRZgzxmS4FQNfRSnaa6secG6\r\nja6HZTXC7Y1k1TLJ+t1eqG+8dGzsE/ieZhb8dXo3PLkSefCXhZdiJEinfIxr0fc6\r\nB03DIobgjd9H4eIilwyGcJKb8UvZqmODECCtSxkCgYEA3/bdygoKD1FRyef6/gKI\r\nDidpzKIoyMvkO7k5RjsTSqHncPIBssM70HSe+VHCjYTbUjLtZdwf9+KcLiYwaptU\r\nfzH28Z13sUXHOhv+Ec+x6OZoIy7bstJfMl07UQH3kDw+JhV2/SXziJ2uc+YEtQEa\r\nyjlKafJXaIk2u0hYO98IUHcCgYADW08TQQNajmLO6IL4hbO2OyHRwmEWsaDOnel3\r\ntSp5UYArfxEe/fm1ZohseImgffv+MGZZAWLuk8S1TYlXvNBO7EYhpsTZ02IJSXrN\r\ndzlzYsK+Gt2y/2K9jmbcslYG+Ov+xfANe5COSf+3GL0vEPAB2yWBNCkpfz1Pzvh4\r\nnILywQKBgHlYIItpCJVrSpNQen8LShZhNr87ldEgUwNr2dvmPht4n1L0YkDHb7XW\r\n/+E0KEfrDG7Gds0uBSzBoHGYtO9LgDUcvmDRGSUVjP234Jm+wMlnLV2XUoQGD8t8\r\ns2rmqtc4NgVYgp5RcSpBLTNcy3ZzC7+ppXVVKie1KyIJNr0Wctu4\r\n-----END RSA PRIVATE KEY-----\r\n",
+    "publicKey": "-----BEGIN CERTIFICATE-----\r\nMIIDGjCCAgKgAwIBAgIJHauRveRWjdzIMA0GCSqGSIb3DQEBCwUAMCkxJzAlBgNV\r\nBAMTHmNtLXAxODI1My1lNDY2MjItaW50ZWdyYXRpb24tMDAeFw0yNTA1MjExNDE2\r\nNDZaFw0yNjA1MjExNDE2NDZaMCkxJzAlBgNVBAMTHmNtLXAxODI1My1lNDY2MjIt\r\naW50ZWdyYXRpb24tMDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANG5\r\nxgHSDqhVG/cQkK7S5gQQORcutn89IKlmPa4n18TQ4R74WG9S4la4gM4ZE7aAyuIe\r\nilSB5qLWCqbZQz/6jaz2/V5LnVlTLOjZX7wZj4WSQgPPsjWcpgcerapLeDcgLxyu\r\nRigyu/HlIMew8V5nm/3UUwrLfG06rAi9jduw/ffN36IKquG/d49LwLqBSKGmzdyL\r\nc/dEYNyYqFAeiTr5QnX+08HAZTeWiWSpq/iYDCtLXokZZkyby2sgG4zdfzxdzcNj\r\nOz375ycr3t+HnmeWk0RJnwXI/8WMMzS68FNP3La/cq2qffihgfSCjJ5mdU4JeTD5\r\nwCroBNCUy3SxnGm4dn8CAwEAAaNFMEMwDAYDVR0TBAUwAwEB/zALBgNVHQ8EBAMC\r\nAvQwJgYDVR0RBB8wHYYbaHR0cDovL2V4YW1wbGUub3JnL3dlYmlkI21lMA0GCSqG\r\nSIb3DQEBCwUAA4IBAQAaXSqKb10naXQYV8BuiDqj3AVnqvzkd5KV6+JNvnhrx5Jp\r\ncH2uCKzOhiYiG1ZyBu9Fr3P5j9LWmYkVKHQ8ySlZpHJMXSrPk5JfjOkH/mvtvGsY\r\n4d0Sp9MCjyrEIn9hiyht1UjDgjqzDKWtrBkTW0652h0ggSwxJ9y/bSxS3wFmfyj/\r\n/axf5BAI1L+yXdav/7pGPRL9y/HIPQ5HRsbvjjEHh8OHKWeuSHN5cXqiPrqumCN+\r\n4EqtlDJdcIzzmxsvvA79MVaRVna0HLpI6KSum2r0EnXmJdwNMBMNq3Uf/JBaZ9Qv\r\npOqeMuYiGVuLTZZepAZePUaNzsC0dt0fAWegNZz6\r\n-----END CERTIFICATE-----\r\n",
+    "certificateExpirationDate": "2026-05-21T14:16:46.000Z"
+  },
+  "statusCode": 200
+}
