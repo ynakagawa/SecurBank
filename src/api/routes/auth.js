@@ -17,7 +17,9 @@ let exchange;
 try {
   exchange = require("@adobe/aemcs-api-client-lib");
 } catch (error) {
-  console.error("@adobe/aemcs-api-client-lib not found. Install it with: npm install @adobe/aemcs-api-client-lib");
+  console.error("@adobe/aemcs-api-client-lib not found.");
+  console.error("Install it from GitHub with: npm install https://github.com/adobe/aemcs-api-client-lib.git");
+  console.error("Or run: npm install");
 }
 
 // Cache for service tokens to avoid unnecessary API calls

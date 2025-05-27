@@ -12,6 +12,16 @@ Service tokens provide a secure way to authenticate with Adobe AEM Cloud Service
 2. Service account integration configured in Adobe Developer Console
 3. `service.json` file with your integration credentials
 
+## Installation
+
+The Adobe AEM Cloud Service API Client Library is installed directly from the [official GitHub repository](https://github.com/adobe/aemcs-api-client-lib):
+
+```bash
+npm install
+```
+
+This will automatically install `@adobe/aemcs-api-client-lib` from `https://github.com/adobe/aemcs-api-client-lib.git` as specified in package.json.
+
 ## Setup Methods
 
 ### Method 1: Server-Side Token Generation (Recommended for Production)
