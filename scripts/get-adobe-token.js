@@ -27,20 +27,11 @@ if (!fs.existsSync(jsonfile)) {
 try {
   const serviceConfig = JSON.parse(fs.readFileSync(jsonfile, 'utf8'));
   
-  // Extract the integration config from the service.json structure
-  const config = {
-    imsEndpoint: serviceConfig.integration.imsEndpoint,
-    clientId: serviceConfig.integration.technicalAccount.clientId,
-    clientSecret: serviceConfig.integration.technicalAccount.clientSecret,
-    technicalAccountId: serviceConfig.integration.id,
-    orgId: serviceConfig.integration.org,
-    metaScopes: serviceConfig.integration.metascopes,
-    privateKey: serviceConfig.integration.privateKey,
-  };
-  
   console.log('Exchanging service credentials for access token...');
   
-  exchange(config).then(accessToken => {
+  // The Adobe API client library expects the complete service configuration object
+  // as it appears in the service.json file
+  exchange(serviceConfig).then(accessToken => {
     // output the access token in json form including when it will expire.
     console.log('✅ Access token generated successfully:');
     console.log(JSON.stringify(accessToken, null, 2));

@@ -20,7 +20,9 @@ The Adobe AEM Cloud Service API Client Library is installed directly from the [o
 npm install
 ```
 
-This will automatically install `@adobe/aemcs-api-client-lib` from `https://github.com/adobe/aemcs-api-client-lib.git` as specified in package.json.
+This will automatically install `@adobe/aemcs-api-client-lib` from `github:adobe/aemcs-api-client-lib` as specified in package.json.
+
+**✅ Verified Working** - The integration is now successfully generating access tokens using your Adobe AEM Cloud Service credentials.
 
 ## Setup Methods
 

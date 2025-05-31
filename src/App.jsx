@@ -8,6 +8,7 @@ import Articles from "./pages/Articles.jsx";
 import Services from "./pages/Services.jsx";
 import ArticleDetail from "./pages/ArticleDetail.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import TestGraphQL from "./components/TestGraphQL.jsx";
 import { getURI } from "./utils";
 import "./App.scss";
 
@@ -34,6 +35,7 @@ function App() {
               <Route path="/articles/:slug" element={<ArticleDetail />} />
               <Route path="/services" element={<Services />} />
               <Route path="/services/:slug" element={<Services />} />
+              <Route path="/test-graphql" element={<TestGraphQL />} />
               <Route path="/*" element={<NotFound />} />
             </Routes>
           </main>

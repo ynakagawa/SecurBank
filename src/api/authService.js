@@ -40,12 +40,15 @@ let serviceTokenCache = {
  * @returns {string|Array|null} Authorization configuration
  */
 export const getAuthConfig = () => {
+  console.log('Getting auth config, method:', REACT_APP_AUTH_METHOD);
+  
   switch (REACT_APP_AUTH_METHOD) {
     case 'basic':
       if (!REACT_APP_BASIC_AUTH_USER || !REACT_APP_BASIC_AUTH_PASS) {
         console.warn('Basic auth credentials not found in environment variables');
         return null;
       }
+      console.log('Using basic authentication');
       return [REACT_APP_BASIC_AUTH_USER, REACT_APP_BASIC_AUTH_PASS];
       
     case 'dev-token':
@@ -53,11 +56,19 @@ export const getAuthConfig = () => {
         console.warn('Dev token not found in environment variables');
         return null;
       }
+      console.log('Using dev token authentication');
       return REACT_APP_DEV_TOKEN;
       
     case 'service-token':
+      console.log('Using service token authentication');
       // For service tokens, we'll handle this separately
-      return getServiceToken();
+      const token = getServiceToken();
+      if (token) {
+        console.log('Service token obtained successfully');
+      } else {
+        console.error('Failed to obtain service token');
+      }
+      return token;
       
     default:
       console.log('No authentication method specified or using default (none)');
@@ -72,11 +83,13 @@ export const getAuthConfig = () => {
 export const getServiceToken = () => {
   // If we have a cached token that's still valid, use it
   if (serviceTokenCache.token && serviceTokenCache.expiresAt && Date.now() < serviceTokenCache.expiresAt) {
+    console.log('Using cached service token');
     return serviceTokenCache.token;
   }
 
   // Check if token is provided via environment variable
   if (REACT_APP_SERVICE_TOKEN) {
+    console.log('Using service token from environment variable');
     // Cache the token (assume 1 hour expiry if not specified)
     serviceTokenCache.token = REACT_APP_SERVICE_TOKEN;
     serviceTokenCache.expiresAt = Date.now() + (60 * 60 * 1000); // 1 hour

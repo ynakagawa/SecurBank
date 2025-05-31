@@ -56,19 +56,9 @@ router.post('/service-token', async (req, res) => {
 
     const serviceConfig = JSON.parse(fs.readFileSync(serviceJsonPath, 'utf8'));
     
-    // Extract the integration config
-    const config = {
-      imsEndpoint: serviceConfig.integration.imsEndpoint,
-      clientId: serviceConfig.integration.technicalAccount.clientId,
-      clientSecret: serviceConfig.integration.technicalAccount.clientSecret,
-      technicalAccountId: serviceConfig.integration.id,
-      orgId: serviceConfig.integration.org,
-      metaScopes: serviceConfig.integration.metascopes,
-      privateKey: serviceConfig.integration.privateKey,
-    };
-
     // Exchange credentials for access token
-    const accessToken = await exchange(config);
+    // The Adobe API client library expects the complete service configuration object
+    const accessToken = await exchange(serviceConfig);
     
     // Cache the token (subtract 5 minutes for safety margin)
     const expiresAt = Date.now() + ((accessToken.expires_in - 300) * 1000);
