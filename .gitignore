@@ -6,6 +6,24 @@
 target/
 .cache
 
+# SECURITY - Sensitive Files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+service.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+secrets/
+.secrets
+config/local.json
+config/production.json
+.secure-config.txt
+
 #submodules
 
 ### Eclipse ###
