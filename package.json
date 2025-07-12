@@ -60,11 +60,13 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "babel-loader": "^10.0.0",
     "concurrently": "^7.6.0",
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "html-webpack-plugin": "^5.6.3",
     "resolve-url-loader": "^5.0.0",
+    "source-map-loader": "^5.0.0",
     "style-loader": "^4.0.0"
   }
 }
