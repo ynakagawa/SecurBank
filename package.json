@@ -2,6 +2,7 @@
   "name": "securbank",
   "version": "1.0.0",
   "private": true,
+  "main": "server.js",
   "proxy": "http://localhost:3000",
   "dependencies": {
     "@adobe/aem-headless-client-js": "^3.3.3",
