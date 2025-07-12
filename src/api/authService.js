@@ -179,7 +179,7 @@ export const fetchServiceTokenFromAPI = async () => {
   }
 };
 
-export default {
+const authService = {
   getAuthConfig,
   getServiceToken,
   setServiceToken,
@@ -187,4 +187,6 @@ export default {
   isServiceTokenAuth,
   getServiceConfig,
   fetchServiceTokenFromAPI,
-}; 
+};
+
+export default authService; 
