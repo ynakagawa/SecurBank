@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a28b77b.css",
-    "main.js": "/static/js/main.b5f3967d.js",
-    "static/js/453.b3974415.chunk.js": "/static/js/453.b3974415.chunk.js",
+    "main.css": "/static/css/main.dcbaf9eb.css",
+    "main.js": "/static/js/main.5ba6d156.js",
+    "static/js/453.197e7f1e.chunk.js": "/static/js/453.197e7f1e.chunk.js",
     "static/media/InterTight-VariableFont.ttf": "/static/media/InterTight-VariableFont.1a6637707f1f349e23bb.ttf",
     "static/media/phones.png": "/static/media/phones.b07da470faaeccbd0516.png",
     "static/media/twitter-icon.svg": "/static/media/twitter-icon.acb35e345793892308cc90c6b98bef8c.svg",
@@ -13,12 +13,12 @@
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.d2cb008739122d12f23b4eec1515d59c.svg",
     "static/media/SecurBank-icon-dark.svg": "/static/media/SecurBank-icon-dark.81da6e3a3fecb94f69dd350eb93bd595.svg",
     "static/media/arrow-right.svg": "/static/media/arrow-right.790a0902bfebbe9cdc3c7c3b16f5898d.svg",
-    "main.9a28b77b.css.map": "/static/css/main.9a28b77b.css.map",
-    "main.b5f3967d.js.map": "/static/js/main.b5f3967d.js.map",
-    "453.b3974415.chunk.js.map": "/static/js/453.b3974415.chunk.js.map"
+    "main.dcbaf9eb.css.map": "/static/css/main.dcbaf9eb.css.map",
+    "main.5ba6d156.js.map": "/static/js/main.5ba6d156.js.map",
+    "453.197e7f1e.chunk.js.map": "/static/js/453.197e7f1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a28b77b.css",
-    "static/js/main.b5f3967d.js"
+    "static/css/main.dcbaf9eb.css",
+    "static/js/main.5ba6d156.js"
   ]
 }
