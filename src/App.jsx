@@ -12,6 +12,10 @@ import TestGraphQL from "./components/TestGraphQL.jsx";
 import { getURI } from "./utils";
 import "./App.scss";
 
+// Universal Editor needs to connect to the author instance, not publish
+const { REACT_APP_HOST_URI, REACT_APP_USE_PROXY } = process.env;
+const aemConnectionURL = REACT_APP_USE_PROXY === "true" ? "/" : REACT_APP_HOST_URI;
+
 function App() {
   return (
     <HelmetProvider>
@@ -23,7 +27,7 @@ function App() {
           />
           <meta
             name="urn:adobe:aue:system:aemconnection"
-            content={`aem:${getURI()}`}
+            content={`aem:${aemConnectionURL}`}
           />
         </Helmet>
         <Header />
