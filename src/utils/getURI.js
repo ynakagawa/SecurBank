@@ -8,7 +8,6 @@ export const getURI = (path = "") => {
   // If path starts with /adobe/dynamicmedia/deliver/, ensure it points to publish
   // Always use the actual publish URL, not the proxy, for dynamic media URLs
   if (path && path.startsWith("/adobe/dynamicmedia/deliver/")) {
-    console.log(path + "pub: " + publishURI);
     return publishURI + path;
   }
   
