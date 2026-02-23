@@ -27,13 +27,18 @@ const Header = () => {
   const handleSignIn = async () => {
     if (isInIframe) {
       try {
-        await oktaAuth.signInWithPopup();
+        // token.getWithPopup opens a separate top-level window for Okta login,
+        // returns the tokens to the iframe via postMessage, and avoids
+        // redirecting the iframe itself (which would break the UE shell).
+        const { tokens } = await oktaAuth.token.getWithPopup({
+          scopes: ["openid", "profile", "email"],
+        });
+        oktaAuth.tokenManager.setTokens(tokens);
       } catch (err) {
-        // Popup was blocked or closed — fall back to top-level redirect so the
-        // user always has a path to authenticate.
+        // Popup blocked or closed by the user — redirect the top-level window
+        // as a fallback so authentication is always reachable.
         if (err.name !== "UserCancelledError") {
-          window.top.location.href =
-            window.location.origin + "/login?redirectTo=" + encodeURIComponent(window.location.href);
+          window.top.location.href = window.location.origin + "/login/callback";
         }
       }
     } else {
