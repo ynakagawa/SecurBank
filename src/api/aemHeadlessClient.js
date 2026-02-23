@@ -16,7 +16,6 @@ const {
   REACT_APP_HOST_URI,
   REACT_APP_GRAPHQL_ENDPOINT,
   REACT_APP_USE_PROXY,
-  REACT_APP_PUBLISH_URI
 } = process.env;
 
 // In a production application the serviceURL should be set to the production AEM Publish environment
