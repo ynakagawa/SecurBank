@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "main": "server.js",
-  "proxy": "http://localhost:3000",
+  "proxy": "https://publish-p18253-e46622.adobeaemcloud.com",
   "dependencies": {
     "@adobe/aem-headless-client-js": "^3.3.3",
     "@adobe/aemcs-api-client-lib": "github:adobe/aemcs-api-client-lib",
+    "@okta/okta-auth-js": "^7.14.1",
+    "@okta/okta-react": "^6.10.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
