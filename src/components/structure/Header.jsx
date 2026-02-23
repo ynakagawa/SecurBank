@@ -12,8 +12,33 @@ const Header = () => {
     { label: "Articles", href: "/articles" },
   ];
 
-  const handleSignIn = () => {
-    oktaAuth.signInWithRedirect();
+  // Universal Editor (and any other host) loads the app inside an iframe.
+  // signInWithRedirect() navigates the iframe itself, breaking the UE shell.
+  // Use signInWithPopup() inside iframes so the Okta dialog opens as a
+  // separate top-level window and the iframe stays in place.
+  const isInIframe = (() => {
+    try {
+      return window.self !== window.top;
+    } catch {
+      return true;
+    }
+  })();
+
+  const handleSignIn = async () => {
+    if (isInIframe) {
+      try {
+        await oktaAuth.signInWithPopup();
+      } catch (err) {
+        // Popup was blocked or closed — fall back to top-level redirect so the
+        // user always has a path to authenticate.
+        if (err.name !== "UserCancelledError") {
+          window.top.location.href =
+            window.location.origin + "/login?redirectTo=" + encodeURIComponent(window.location.href);
+        }
+      }
+    } else {
+      oktaAuth.signInWithRedirect();
+    }
   };
 
   const handleSignOut = () => {

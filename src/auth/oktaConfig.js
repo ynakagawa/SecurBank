@@ -26,6 +26,8 @@ export const oktaAuth = new OktaAuth({
   // Suppress SSL validation errors for the self-signed cert used by `react-scripts` on localhost.
   // Has no effect in production builds.
   disableHttpsCheck: process.env.NODE_ENV !== "production",
+  // Allow enough time for a user to complete sign-in in a popup window.
+  postMessageTimeout: 20000,
   tokenManager: {
     autoRenew: true,
     storage: "sessionStorage",
