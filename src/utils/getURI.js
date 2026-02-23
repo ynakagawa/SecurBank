@@ -16,7 +16,7 @@ export const getURI = (path = "") => {
     // Check if it's pointing to an author instance
     if (path.includes("/adobe/dynamicmedia/deliver/")) {
       // Extract the path part after the domain
-      const urlPath = path.replace(/^https?:\/\/[^\/]+/, "");
+      const urlPath = path.replace(/^https?:\/\/[^/]+/, "");
       // Always use the actual publish URL for dynamic media URLs
       return publishURI + urlPath;
     }
